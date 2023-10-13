@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="LumaTest" verbose="1" parallel="tests" thread-count="1">
+    <listeners>
+        <listener class-name="utils.Listeners"></listener>
+    </listeners>
+
+    <test name="Coding Challenge" thread-count="5">
+        <!--        <packages>-->
+        <!--            <package name="test.LumaTest"></package>-->
+        <!--        </packages>-->
+        <classes>
+            <class name="test.LumaTest"/>
+        </classes>
+    </test>
+</suite>
